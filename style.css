@@ -1,3 +1,9 @@
+h1 {
+  margin: 0 auto !important;
+  text-align: center;
+  font-size: 28px !important;
+  padding: 20px;
+}
 h2 {
   margin: 0 auto !important;
   text-align: center;
@@ -5,6 +11,10 @@ h2 {
 }
 a {
   text-decoration: none !important;
+}
+p {
+  margin-bottom: .2em !important;
+  text-align: center;
 }
 
 .main-top {
