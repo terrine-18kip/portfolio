@@ -9,6 +9,10 @@ h2 {
   text-align: center;
   padding: 40px;
 }
+h3 {
+  position: sticky;
+  top: 40px;
+}
 a {
   text-decoration: none !important;
 }
@@ -129,4 +133,13 @@ p {
 .app-demo {
   margin-top: .5em;
   text-align: center;
+}
+.research-content {
+  width: 100%;
+  max-width: 810px;
+  margin: 0 auto;
+  text-align: center;
+}
+.summary {
+  height: 100vh;
 }
