@@ -4,8 +4,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Terrine Portfolio</title>
+  <link rel="icon" type="image/x-icon" href="favicon_portfolio1.png">
   <link rel="stylesheet" href="destyle.css">
   <link rel="stylesheet" href="style.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script>
     (function(d) {
       var config = {
@@ -36,12 +39,12 @@
       <img src="cover.jpg" class="cover">
       <p class="cover-text">Terrine Portfolio</p>
     </div>
-    <div class="content profile">
-      <h2 id="i1">Profile</h2>
-      <div class="profile">
+    <div class="content-profile">
+      <h2 id="i1" data-aos="fade-up">Profile</h2>
+      <div class="profile" data-aos="fade-up">
         <img src="profile.jpg" class="profile-img">
       </div>
-      <div class="profile-text">
+      <div class="profile-text" data-aos="fade-up">
         Ryota Nakagawa<br>
         愛知県名古屋市出身、25歳。<br><br>
         趣味は一眼レフカメラを携えて旅をすることで、47都道府県を制覇しました。
@@ -51,10 +54,10 @@
         Ruby on Railsを中心に、ITに関する基礎知識やwebアプリケーションの作成手順を学び、学習開始から2ヶ月半で、旅の計画を立てられるwebアプリ<a href="http://trip.18kipper.com" target="_blank" rel="noopener noreferrer">「trip diary」</a>を作成しました。
       </div>
     </div>
-    <div class="content">
-      <h2 id="i2">Works</h2>
+    <div class="content-work" data-aos="fade-up">
+      <h2 id="i2" data-aos="fade-up">Works</h2>
       <div class="work-box">
-        <div class="work orange">
+        <div class="work orange" data-aos="fade-up">
           <a href="app.html"></a>
           <div class="work-left">
             <img src="tripdiary-01.png" class="work-img">
@@ -67,7 +70,7 @@
           </div>
         </div>
 
-        <div class="work blue">
+        <div class="work blue" data-aos="fade-up">
           <a href="research.html"></a>
           <div class="work-left">
             <img src="research-25.png" class="work-img">
@@ -80,7 +83,7 @@
           </div>
         </div>
 
-        <div class="work pink">
+        <div class="work pink" data-aos="fade-up">
           <a href="https://18kipper.com" target="_blank" rel="noopener noreferrer"></a>
           <div class="work-left">
             <img src="blog.png" class="work-img">
@@ -93,7 +96,7 @@
           </div>
         </div>
 
-        <div class="work green">
+        <div class="work green" data-aos="fade-up">
           <a href="draw.html"></a>
           <div class="work-left">
             <img src="draw.png" class="work-img">
@@ -112,6 +115,8 @@
   <div class="main-bottom">
     © 2021 Terrine Portfolio All rights reserved. 
   </div>
+
+  <script>AOS.init();</script>
 
 </body>
 </html>
