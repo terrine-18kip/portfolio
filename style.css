@@ -2,26 +2,48 @@
   font-family: noto-sans-cjk-jp, sans-serif;
   font-weight: 300;
   font-style: normal;
-  color: #333333;
+  color: #444444;
   line-height: 1.2em;
 }
 
+.main-h1 {
+  display: flex;
+  justify-content: center;
+}
 h1 {
-  margin: 0 auto;
-  text-align: center;
+  margin: 40px 10px;
+  color: #444444;
   font-size: 28px;
   font-weight: 500;
-  padding: 40px;
+  padding: 15px 20px;
   line-height: 1.2;
+  display: inline-block;
+  background: #DF8D75;
+  vertical-align: middle;
+  border-radius: 25px;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, .2);
+}
+h1::before {
+  content: '●';
+  color: white;
+  font-size: 26px;
+  margin-right: 8px;
 }
 h2 {
   font-size: 28px;
   font-weight: 700;
-  margin: 0 auto !important;
+  margin: 0 auto;
   text-align: center;
   padding: 40px;
 }
 h3 {
+  font-size: 26px;
+  font-weight: 500;
+  margin: 0 auto;
+  text-align: center;
+  padding: 40px;
+}
+h4 {
   position: sticky;
   top: 40px;
   margin: 0 10% !important;
@@ -71,9 +93,11 @@ p {
   font-weight: 500;
   font-size: 14px;
   line-height: 1;
+  transition: ease .3s;
 }
-.main-top-link:hover {
-  background-color:  rgba(255, 241, 236, 0.5);
+.main-top-link a:hover {
+  color: #D3918F;
+  background-color:  rgba(80, 80, 80, 0.6);
 }
 .main-bottom {
   width: 100%;
@@ -96,7 +120,7 @@ p {
   padding-bottom: 50px;
   width: 100%;
   margin: 0 auto;
-  background: #D6B770;
+  background: #E6C477;
 }
 .content-work {
   min-height: 100vh;
@@ -146,19 +170,21 @@ p {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+  padding-bottom: 100px;
+  padding-bottom: 100px;
 }
 .work {
   position: relative;
   width: 98%;
   max-width: 800px;
-  margin: 8px;
+  margin: 15px 5px;
   padding: 20px;
-  background-color: #fffafa;
   display: flex;
   justify-content: space-around;
   font-size: 15px;
   border-radius: 30px;
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, .2);
+  transition: ease .3s;
 }
 .orange {
   background: #DF8D75;
@@ -167,7 +193,7 @@ p {
   background: #DE8384;
 }
 .blue {
-  background: #4782B3;
+  background: #579ED9;
 }
 .green {
   background: #64AB79;
@@ -179,8 +205,17 @@ p {
   top: 0;
   left: 0;
 }
-.work:hover {
-  background-color: #f5f8fa;
+.work.orange:hover {
+  background: #FFA185;
+}
+.work.pink:hover {
+  background: #FF9698;
+}
+.work.blue:hover {
+  background: #66BAFF;
+}
+.work.green:hover {
+  background: #7BD495;
 }
 .work-left {
   width: 45%;
